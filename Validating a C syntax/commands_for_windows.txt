@@ -1,0 +1,4 @@
+bison —dy parser. y
+flex lexer.l
+gcc y. tab. c lex.yy.c —o my_parser.exe
+my_parser.exe < lab—1_test—1_invalid .c

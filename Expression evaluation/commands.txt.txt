@@ -1,0 +1,6 @@
+flex lexer.l
+bison -dy parser.y
+gcc y.tab.c lex.yy.c sym_tab.c -o my_parser.exe
+my_parser.exe < sample_input1.c
+my_parser.exe < sample_input2.c
+my_parser.exe < sample_input3.c
